@@ -1,0 +1,41 @@
+<html>
+    <head>
+    <title>JAVASCRIPT25</title>
+      <script>
+    //arrow function demo
+    const sum=(a,b) =>a+b //sum is a variable
+    document.writeln("Output="+ sum(10.5,20.6)+"</br>")
+
+    const add=(c,d) =>{
+        let output=c+d
+        return output
+    }
+    document.writeln("Output="+add(10,5)+"</br>")
+
+    const mul =(x,y) =>
+    {
+        let output=x*y
+        return output
+    }
+    document.writeln("Output="+mul(13,25)+"</br>")
+
+    const flag=(n)=>
+    {
+        if(n%2==0)
+        return true
+        else
+        return false
+    } 
+    let n=11//static variable
+    if(flag(n))
+    document.writeln(n+" is Even")
+    else
+    document.writeln(n+" is Odd")
+
+
+      </script> 
+    </head>
+    <body>
+
+    </body>
+</html>

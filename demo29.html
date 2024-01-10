@@ -1,0 +1,48 @@
+<html>
+    <head>
+    <title>JAVASCRIPT29</title>
+      <script>
+      //map object-for each method
+      //to iterate mapobject 
+        const mapobj1 = new Map()
+        mapobj1.set(1,101)
+        mapobj1.set("id",1234)
+        mapobj1.set("name","klu")
+        
+        document.writeln("Map Object 1 Size="+mapobj1.size+"</br>")
+
+        //in for each if 1 parameter it si value and if 2 parameters 1st one is value and 2nd one is key i.e;[v,k]
+       document.writeln("<u>Map Object 1  Value</u></br>")
+       mapobj1.forEach( (value) => document.writeln(value))
+       document.writeln("</br>")
+
+       document.writeln("<u>Map Object 1 Keys & Value</u></br>")
+       mapobj1.forEach((v,k) =>
+       { 
+        document.writeln(k+":"+v)
+      })
+       
+      //to assign directly without using set operator
+       const mapobj2 = new Map([ ["id",101],["name","klu"] ])
+
+       document.writeln("</br>")
+
+       document.writeln("Map Object 2 Size="+mapobj2.size+"</br>")
+
+       document.writeln("<u>Map Object 2  Value</u></br>")
+
+       mapobj2.forEach((v) => document.writeln(v))
+       
+       document.writeln("</br>")
+
+       document.writeln("<u>Map Object 2  keys & Value</u></br>")
+
+        const display= (v,k) => {
+          document.writeln(k+":"+v)
+         }
+         mapobj2.forEach(display) //where display is callback
+      </script> 
+    </head>
+    <body>
+    </body>
+</html>

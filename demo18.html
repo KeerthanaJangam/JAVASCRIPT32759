@@ -1,0 +1,59 @@
+<html>
+    <head>
+    <title>JAVASCRIPT18</title>
+    <script>
+        //arrays
+    document.writeln("<u>Demo on Arrays</u></br>")
+    const a=[10,20,30]//same type elements
+    document.writeln(a+"</br>")
+    document.writeln( typeof a+"</br>")
+    document.writeln(a.length +"</br>")
+    document.writeln(a[0]+"</br>")
+    document.writeln(a[2]+"</br>")
+    document.writeln(a[5]+"</br>")
+    document.writeln( typeof a[0]+"</br>")
+    a[2]="klu"
+    document.writeln(a+"</br>")
+    a[3]="cse"
+    document.writeln(a+"</br>")
+    a.push(40)//insert the element from the last
+    a.push("mswd")
+    document.writeln(a+"</br>")
+    document.writeln(a.length +"</br>")
+    a.pop()//delete the element from the last
+    document.writeln(a+"</br>")
+    document.writeln(a.length +"</br>")
+    document.writeln(a.reverse()+"</br>")
+    document.writeln(a.sort()+"</br>")
+    document.writeln("Array:"+a+"</br>")
+    let element=a.shift()//1st element is removed
+    document.writeln(element +"</br>")
+    document.writeln("After Shifting:"+a+"</br>")
+    let len= a.unshift(10)//will add the elments into list at begining
+    document.writeln(len +"</br>")
+    document.writeln("After Unshifting:"+a+"</br>")
+     len= a.unshift("psqt","aws",143)//will add the elments into list at begining
+    document.writeln(len +"</br>")
+    document.writeln("After Unshifting:"+a+"</br>")
+    document.writeln("<u>Display Array elements using for loop</u></br>")
+    for(let i=0;i<a.length;i++)
+    {
+        document.writeln(a[i]+"</br>")
+    }
+    document.writeln("<u>Display Array elements using for in  loop</u></br>")
+    for(let i in a)//i is index
+    {
+        document.writeln(a[i]+ "</br>")
+    }
+    document.writeln("<u>Display Array elements using for of  loop</u></br>")
+    for(let element of a)//element
+    {
+        document.writeln(element+ "</br>")
+
+    }
+    //array values-courses
+    </script> 
+    </head>
+    <body>
+    </body>
+</html>

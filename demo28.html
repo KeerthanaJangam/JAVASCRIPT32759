@@ -1,0 +1,65 @@
+<html>
+    <head>
+    <title>JAVASCRIPT28</title>
+      <script>
+       // collection of objects
+      //map object-{key,vlaue} pair
+        const  demomap= new Map()
+        demomap.set("id",123)
+        demomap.set("name","klu")
+        demomap.set("age",40.5)
+        demomap.set("status",false)
+        demomap.set("name","klef")//the will not be taken, duplicate key || klu will be updated as klef
+
+        document.writeln("map size="+demomap.size +"</br>")
+        document.writeln("map type="+typeof demomap+"</br>")
+
+        document.writeln(demomap.get("id")+"</br>")
+        document.writeln(demomap.get("location")+"</br>")//undefined
+
+        document.writeln(demomap.has("id")+"</br>")//has will check whether the key is their or not
+        document.writeln(demomap.has("location")+"</br>")
+
+        document.writeln("Deletion:"+ demomap.delete("status")+"</br>")
+       
+        document.writeln("map size="+demomap.size +"</br>")
+        document.writeln("map type="+typeof demomap+"</br>")
+
+        document.writeln("<u>Display Map keys</u></br>")
+        for(let k of demomap.keys())//only print the keys
+        {
+            document.writeln(k)
+        }
+        document.writeln("</br>")
+
+
+        document.writeln("<u>Display Map value</u></br>")
+        for(let v of demomap.values())//only print the keys
+        {
+            document.writeln(v)
+        }
+        document.writeln("</br>")
+
+
+        document.writeln("<u>Display Map values based on keys</u></br>")
+        for(let k of demomap.keys())//only print the keys
+        {
+            document.writeln(demomap.get(k))
+        }
+        document.writeln("</br>")
+
+        document.writeln("<u>Display Map values and  keys</u></br>")
+        for( let [k,v] of demomap.entries())
+        {
+            document.writeln(k +":"+ v)
+        }
+        document.writeln("</br>")
+
+        demomap.clear()
+        document.writeln("map size="+demomap.size +"</br>")
+
+      </script> 
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <title>JAVASCRIPT23</title>
+      <script>
+        //using var 
+       function demo1()
+       {
+        document.writeln("I am in Demo 1</br>")
+        {
+            var a=10//function scope
+            document.writeln("Inside the block</br>")
+            document.writeln("a="+a+"</br>")
+        }
+        document.writeln("a="+a+ "</br>")
+       }
+       function demo2()
+       {
+        document.writeln("I am in Demo 2</br>")
+        {
+            let b=10//block scope
+            document.writeln("Inside the block</br>")
+            document.writeln("b="+b+"</br>")
+        }
+        document.writeln("b="+b+ "</br>")
+       }
+       function demo3()
+       {
+        document.writeln("I am in Demo 3</br>")
+        {
+            const c=30//block scope
+            document.writeln("Inside the block</br>")
+            document.writeln("c="+c+"</br>")
+        }
+        //const c=13.5
+        //const b=13.5
+        //const c=20
+        document.writeln("c="+c+ "</br>")
+       }
+        // demo1()
+        //  demo2()
+            demo3()
+      </script> 
+    </head>
+    <body>
+
+    </body>
+</html>

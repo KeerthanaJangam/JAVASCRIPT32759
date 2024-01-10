@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <title>JAVASCRIPT31</title>
+      <script>
+     //template literal-to concat variable and string 
+    const name="Nani"
+    document.writeln(`<b>My name is ${name}</b>`)
+    document.writeln("</br>")
+     //spread operator - we can merge 2 arrys directly
+    const a=[1,2,3]
+    const b=[...a,4,5]
+    document.writeln(a+"</br>")
+    document.writeln(b+"</br>")
+
+    const p=[10,20,30]
+    const q=[...p]
+    const r=[...p,...q]
+    document.writeln(p+"</br>")
+    document.writeln(q+"</br>")
+    document.writeln(r+"</br>")
+
+    const v1="kluniversity"
+    const v2=[...v1]
+    document.writeln(v1+"</br>")
+    document.writeln(v2+"</br>")
+
+
+    //de-structing assignment -extract the elements from array,assinging to separate elements
+    const arr = ["os","aws",10,30]
+    document.writeln("arr="+arr+"</br>")
+    document.writeln("Array Length="+arr.length+"</br>")
+
+    const [m,s,w,d]=arr
+    document.writeln(m+"</.br>")
+    document.writeln(s+"</br>") 
+    document.writeln(w+"</br>") 
+    document.writeln(d+"</br>") 
+
+    const [i,,j]=arr
+    document.writeln(i+"</br>")
+    document.writeln(j+"</br>") 
+
+    const [,,x,y]=arr
+    document.writeln(x+"</br>")
+    document.writeln(y+"</br>")
+      </script> 
+    </head>
+    <body>
+    </body>
+</html>

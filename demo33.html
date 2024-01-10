@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>JAVASCRIPT33</title>
+<script>
+   let txt="kluniversity" //string 
+   document.writeln(`Text=${txt}</br>`)
+   document.writeln("Length="+txt.length+"</br>")
+   document.writeln(txt.concat("cse")+"</br>")
+   document.writeln(txt.toUpperCase()+"</br>")
+   document.writeln(txt.toLowerCase()+"</br>")
+   document.writeln(txt.charAt(11)+"</br>")//index starts from 0
+
+   //(start,length)
+   document.writeln(txt.substring(2,5)+"</br>")
+
+   document.writeln(txt[3]+"</br>")
+   document.writeln(`${txt[4]},${txt[13]},${txt[5]}`)
+
+   document.writeln("</br>")
+   document.writeln("<u>Dispaly Characters using for of loop</u></br>")
+   for (const ch of txt)
+   {
+    document.writeln(ch)
+   }
+
+</script> 
+</head>
+<body>
+</body>
+</html>

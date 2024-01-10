@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <title>JAVASCRIPT27</title>
+      <script>
+       //declare an array using new keyword
+       //constructor with no para
+       let arr=new Array()//size is optional
+       const n=parseInt(prompt("enter array size",1))
+       alert("reading array elements")
+       for(let i=0;i<n;i++)
+       {
+        arr[i]=parseInt(prompt("Enter element"+ (i+1)))
+       }
+       document.writeln("Array Elements</br>")
+       for(let element of arr)
+       {
+        document.writeln(element)
+       }
+       
+       //sumof numbers 
+       document.writeln("</br>")
+       const course=new Array("aws","mswd" ,"pfsd" +"</br>")//constructor-providing values
+       document.writeln("Course Array Length:" +course.length+"</br>")
+       document.writeln("Course Type:"+typeof(course)+"</br>")
+       document.writeln("Course Array Elements</br>")
+       for(let  c of course)
+       {
+        document.writeln(course)
+       }
+      </script> 
+    </head>
+    <body>
+
+    </body>
+</html>
